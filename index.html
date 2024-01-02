@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary of Robots</title>
+    <style>
+        body {
+            background-color: #f5f5f5; /* Light gray background */
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #4CAF50; /* Green header */
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .game {
+            margin-top: 20px;
+        }
+
+        /* Adding color to buttons */
+        button {
+            background-color: #3498db; /* Blue button background */
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Adding color to input fields */
+        input {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Diary of Robots</h1>
+    </header>
+
+    <main>
+        <p>Welcome to the official website of "Diary of Robots"! Get your copy for only $6.99.</p>
+
+        <div class="game">
+            <h2>Games</h2>
+
+            <div>
+                <h3>Game 1: Clicker</h3>
+                <p>Click the button to score points in Game 1.</p>
+                <button onclick="scorePoints('Game 1')">Click to Play</button>
+                <p>Score: <span id="scoreGame1">0</span></p>
+            </div>
+
+            <div>
+                <h3>Game 2: Guess the Number</h3>
+                <p>Try to guess the correct number in Game 2.</p>
+                <input type="number" id="guessInput" placeholder="Enter your guess">
+                <button onclick="checkGuess('Game 2')">Submit Guess</button>
+                <p id="guessResult"></p>
+            </div>
+
+            <div>
+                <h3>Game 3: Memory Match</h3>
+                <p>Click the buttons to reveal hidden symbols in Game 3.</p>
+                <button onclick="revealSymbol('Game 3', 'A')">Click Me</button>
+                <button onclick="revealSymbol('Game 3', 'B')">Click Me</button>
+                <p>Revealed Symbols: <span id="symbolsGame3"></span></p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="main.js></script>
+
+    <footer>
+        <p>© 2024 Diary of Robots. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
